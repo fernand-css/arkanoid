@@ -1,6 +1,6 @@
 # SPEC 01 — MVP jugable de Arkanoid
 
-> **Status:** Aprobado
+> **Status:** Implementado
 > **Depends on:** Ninguno
 > **Date:** 2026-09-03
 > **Objective:** Construir una versión mínima pero completamente jugable de Arkanoid, con un único nivel, control de paleta por mouse y teclado, colisiones simples y puntaje básico.
@@ -101,17 +101,17 @@ Convenciones:
 
 ## Acceptance criteria
 
-- [ ] `index.html` carga sin errores en la consola del navegador.
-- [ ] El spritesheet se carga (`loadSpritesheet`) y se ven los sprites de paleta, pelota y bloques.
-- [ ] La paleta se mueve tanto con el mouse como con el teclado, sin salir de los límites del canvas.
-- [ ] La pelota rebota contra las paredes izquierda, derecha y superior manteniendo velocidad constante.
-- [ ] La pelota rebota contra la paleta con ángulo variable según el punto de impacto, y se escucha `ball-bounce.mp3`.
-- [ ] La grilla inicial tiene exactamente 10×6 = 60 bloques visibles al empezar la partida.
-- [ ] Romper un bloque lo hace desaparecer, suma exactamente 10 puntos al HUD y reproduce `break-sound.mp3`.
-- [ ] Dejar caer la pelota debajo de la paleta resta exactamente una vida y reposiciona pelota y paleta si quedan vidas.
-- [ ] Al llegar a 0 vidas aparece un overlay de "Game Over" con botón "Reintentar".
-- [ ] Al romper los 60 bloques aparece un overlay de "¡Ganaste!" con botón "Reintentar".
-- [ ] El botón "Reintentar" reinicia puntaje, vidas, posición de paleta/pelota y la grilla completa de bloques, sin recargar la página.
+- [x] `index.html` carga sin errores en la consola del navegador.
+- [x] El spritesheet se carga (`loadSpritesheet`) y se ven los sprites de paleta, pelota y bloques.
+- [x] La paleta se mueve tanto con el mouse como con el teclado, sin salir de los límites del canvas.
+- [x] La pelota rebota contra las paredes izquierda, derecha y superior manteniendo velocidad constante.
+- [x] La pelota rebota contra la paleta con ángulo variable según el punto de impacto, y se escucha `ball-bounce.mp3`.
+- [x] La grilla inicial tiene exactamente 10×6 = 60 bloques visibles al empezar la partida.
+- [x] Romper un bloque lo hace desaparecer, suma exactamente 10 puntos al HUD y reproduce `break-sound.mp3`.
+- [x] Dejar caer la pelota debajo de la paleta resta exactamente una vida y reposiciona pelota y paleta si quedan vidas.
+- [x] Al llegar a 0 vidas aparece un overlay de "Game Over" con botón "Reintentar".
+- [x] Al romper los 60 bloques aparece un overlay de "¡Ganaste!" con botón "Reintentar".
+- [x] El botón "Reintentar" reinicia puntaje, vidas, posición de paleta/pelota y la grilla completa de bloques, sin recargar la página.
 
 ---
 
